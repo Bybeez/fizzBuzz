@@ -1,6 +1,7 @@
 def fizzBuzz(number):
+    output = ''
     if(number%3 == 0):
-        return "fizz"
-    elif(number%5 == 0):
-        return "buzz"
-    return ''
+        output += "fizz"
+    if(number%5 == 0):
+        output += "buzz"
+    return output
