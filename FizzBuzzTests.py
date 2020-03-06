@@ -13,7 +13,7 @@ class TestsFizzBuzz(unittest.TestCase):
         expectedOutput = 'fizz'
         self.assertEqual(FizzBuzz.fizzBuzz(input), expectedOutput)
 
-    def testReturnFizzIfNumberIsMultipleOfThree(self):
+    def testReturnBuzzIfNumberIsMultipleOfFive(self):
         input = 10
         expectedOutput = 'buzz'
         self.assertEqual(FizzBuzz.fizzBuzz(input), expectedOutput)
