@@ -9,8 +9,13 @@ class TestsFizzBuzz(unittest.TestCase):
         self.assertEqual(FizzBuzz.fizzBuzz(input), expectedOutput)
 
     def testReturnFizzIfNumberIsMultipleOfThree(self):
-        input = 3
+        input = 9
         expectedOutput = 'fizz'
+        self.assertEqual(FizzBuzz.fizzBuzz(input), expectedOutput)
+
+    def testReturnFizzIfNumberIsMultipleOfThree(self):
+        input = 10
+        expectedOutput = 'buzz'
         self.assertEqual(FizzBuzz.fizzBuzz(input), expectedOutput)
 
 if __name__ == '__main__':
